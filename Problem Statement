@@ -1,0 +1,20 @@
+Problem Statement
+In this assignment, our goal is to develop a program for solving an input number maze. The assignment isadapted from Exercise 11 of Chapter 5 of our textbook(Algorithms by Jeff Ericson). A number maze M[1..n, 1..n] is an n by n grid of non-negative integers. A token is initially placed in the upper left corner, on the square (1,1). We want to move it tothe lower right corner, the square (n,n), using a minimum number of moves. If the token is on square (i,j), thenin a single move, we can move it up, down, left, or right, by M[i,j] squares. (Of course, any such move is validonly if we stay within the grid.) Note that in this assignment we allow M[i,j] to be 0; if the token reaches such asquare (i,j), it cannot move any further. See Exercise 11 of Chapter 5 of
+our textbookfor an illustration.Assume that the input number maze is specified in a file whose first line specifies n, the length of the grid. Thenext n*n lines specify the entries of the maze M row by row -- so the first n of these lines specify M[1,1..n], thenext n lines specify M[2,1..n], and so on. Here is a
+filethat shows the format in which the input data is given;here n = 5. Here is the same input data displayed as a
+maze.Write a program that asks for an input file that contains the input number maze M in the above format, andoutputs the minimum number of moves required to solve the maze; if the maze does not admit a solution, yourprogram should output that. There is no need to output the actual sequence of moves. For full credit, yourprogram should be able to correctly solve inputs of length n = 1000 reasonably fast, say within a second to twominutes. Your program should be sequential, that is, it should not resort to any kind of parallelism like threads,GPU, etc. We want to keep the focus on algorithmic ideas in the sequential setting. We will accept programs inPython and Java.
+The homework is due Thursday, April 29, at 11:59 pm. It is worth 60 points.
+Submission Instructions: For this assignment, you need to submit two things:
+1. A document that includes (a) a description of your algorithm and any data structures you use in yourimplementation; (b) the minimum number of moves and the running time in milliseconds on each sampleinput with n = 10, n = 100, and n = 1000; and (c) instructions for running your program. The description in(a) should be detailed enough to give a clear idea of your algorithmic approach; it is separate from theprogram and accompanying comments. The sample inputs are given below. When calculating runningtime, exclude the time for reading in data from the input file.
+2.The program itself.
+Sample Inputs
+These are the inputs to be reported on in part (b) of the document you submit:
+Inputs with n = 10: (i)smallX.txt     (ii)smallY.txt
+Inputs with n = 100: (i)mediumX.txt   (ii)mediumY.txt
+Inputs with n = 1000 elements: (a)largeX.txt    (b)largeY.txt
+Inputs with Answers
+Inputs with n = 10: (a)testSmallA.txt   (b)testSmallB.txt. Answers I got are 9 and 7 moves, respectively.
+Inputs with n = 100: (a)testMediumA.txt  (b)testMediumB.txt
+. Answers I got for both are 63.
+Inputs with n = 1000 elements: (a)testLargeA.tx   (b)testLargeB.txt
+. Answers I got are 270 and 55,respectively
